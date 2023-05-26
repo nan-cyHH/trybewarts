@@ -10,9 +10,16 @@
 <body>
     <!--1. Crie uma barra verde na parte superior da página.-->
     <header class="header">
-    <!--2. Adicione o logotipo da Trybewarts.-->
+        <!--2. Adicione o logotipo da Trybewarts.-->
         <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts">
-
+        <!--3. Acrescente um formulário de login no header.-->
+        <form class="trybewarts-login">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Senha" required>
+            <button type="button" id="btn-login">Entrar</button>
+        </form>
+    </header>
     
+    <script src="script.js"></script>
 </body>
 </html>
