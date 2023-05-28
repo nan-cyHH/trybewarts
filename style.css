@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color:rgb(237, 243, 242);
 }
 
 .header {
@@ -36,17 +37,15 @@ body {
   color: white;
 }
 
-.evaluation-form {
-  display: flex;
-  width: 675px;
-}
-
 .main {
   display: flex;
+  flex-direction: column;
 }
 
-/* Requisito 6. */
+/* Requisito 6. PS: Mudei o "evaluation-form" de class para id e juntei os trem tudo. */
 #evaluation-form {
+  display: flex;
+  width: 675px;
   flex-direction: column;
 }
 
