@@ -1,5 +1,5 @@
-body{
-  margin: 0; /* Coloquei margin 0 para que o header fique bem coladinho com as bordas. */
+body {
+  margin: 0; 
 }
 
 .header {
@@ -44,15 +44,18 @@ body{
 .main {
   display: flex;
 }
+
 /* Requisito 6. */
 #evaluation-form {
   flex-direction: column;
 }
+
 /* Requisito 7. */
 aside {
   display: flex;
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
+
 /* Requisito 7. */
 #trybewarts-forms-logo {
   height: 500px;
