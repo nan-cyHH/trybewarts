@@ -11,8 +11,12 @@ body {
   padding: 10px;
 }
 
+#trybewarts-header-title {
+  color: aliceblue;
+}
+
 .trybewarts-header-logo {
-  height: 50px;
+  height: 70px;
 }
 
 .trybewarts-login {
@@ -58,4 +62,11 @@ aside {
 /* Requisito 7. */
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(59, 70, 67);
+  color: aliceblue;
 }
