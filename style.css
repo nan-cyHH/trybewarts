@@ -5,6 +5,13 @@ body {
   background-image: url('Fundo.png');
 }
 
+/* body.noturno {
+  margin: 0;
+  background-color: rgb(237, 243, 242);
+  font-family: Inknut Antiqua, serif;
+  background-image: url('Fundo-noite.png');
+} */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -77,4 +84,9 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
 }

@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="noturno">
     <!--1. Crie uma barra verde na parte superior da página.-->
     <header class="header">
         <!--2. Adicione o logotipo da Trybewarts.-->
@@ -22,6 +22,7 @@
             <input type="email" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Senha" required>
             <button type="button" id="btn-login">Entrar</button>
+           <!-- <div onclick="teta()" on><img src="images/lua.png" style="width: 50px;"></div>-->
         </form>
     </header>
     
@@ -44,7 +45,24 @@
           </div>
           </select>
           </label>
+
+          <div class="radio-group">
+          <label id="label-family" for="family">Qual sua família?</label>
+          <div class="radio-front"> 
+          <input type="radio" name="family" id="frontend" value="Frontend">
+          <label for="frontend">Frontend</label>
+        </div>
+        <div class="radio-back">
+          <input type="radio" name="family" id="backend" value="Backend">
+          <label for="Backend">Frontend</label>
+        </div>
+        <div class="radio-full">
+          <input type="radio" name="family" id="fullstack" value="FullStack">
+          <label for="FullStack">Frontend</label>
+        </div> 
+        </div>
         </form>
+
     </main>
 
     <aside>
