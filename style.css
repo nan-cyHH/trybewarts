@@ -90,3 +90,24 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.radio-grupo {
+  display: flex;
+}
+
+.radio-itens {
+  margin-right: 10px;
+}
+
+
