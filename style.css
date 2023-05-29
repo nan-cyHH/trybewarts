@@ -54,6 +54,8 @@ body {
 .main {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  float: left;
 }
 
 /* Requisito 6. PS: Mudei o "evaluation-form" de class para id e juntei os trem tudo. */
@@ -86,10 +88,10 @@ footer {
   left: 0;
 }
 
-.radio-group {
+/* .radio-group {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .checkbox-group {
   display: flex;
@@ -102,12 +104,20 @@ footer {
   margin-bottom: 10px;
 }
 
-.radio-grupo {
+.radio-group {
+  width: 40%;
+  float: left;
+}
+
+.rate {
   display: flex;
 }
 
-.radio-itens {
+.rate-itens {
   margin-right: 10px;
 }
 
-
+.grupo-aprendizados {
+  width: 60%;
+  float: right;
+}

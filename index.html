@@ -42,9 +42,10 @@
              <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
              <option value="Corvinode" id="corvinode-house">Corvinode</option>
              <option value="Pytherina" id="pytherina-house">Pytherina</option>
-          </div>
           </select>
+        </div>
           </label>
+          <div>
 <!--12. Adicione 3 inputs do tipo radio ao formulário.-->
           <div class="radio-group">
           <label id="label-family" for="family">Qual sua família?</label>
@@ -62,78 +63,75 @@
         </div> 
         </div>
         <!--13.Crie inputs do tipo checkbox-->
+        <div id="grupo-aprendizados">
         <label id="label-content" for="subject">Qual conteúdo você está com mais vontade de aprender?</label>
-      
-        <div class="checkbox-group">
-            <div class="checkbox-item">
-                <input type="checkbox" name="subject" id="hofs" class="subject" value="HoFs">
-                <label for="hofs">HoFs</label>
-            </div>
-            <div class="checkbox-item">
-                <input type="checkbox" name="subject" id="jest" class="subject" value="Jest">
-                <label for="jest">Jest</label>
-            </div>
-            <div class="checkbox-item">
-                <input type="checkbox" name="subject" id="promises" class="subject" value="Promises">
-                <label for="promises">Promises</label>
-            </div>
-            <div class="checkbox-item">
-                <input type="checkbox" name="subject" id="react" class="subject" value="React">
-                <label for="react">React</label>
-            </div>
-            <div class="checkbox-item">
-                <input type="checkbox" name="subject" id="sql" class="subject" value="SQL">
-                <label for="sql">SQL</label>
-            </div>
-            <div class="checkbox-item">
-                <input type="checkbox" name="subject" id="python" class="subject" value="Python">
-                <label for="python">Python</label>
-            </div>
+      <table>
+        <tr>
+            <td><input type="checkbox" name="subject" id="hofs" class="subject" value="HoFs">
+                <label for="hofs">HoFs</label></td>
+            <td><input type="checkbox" name="subject" id="jest" class="subject" value="Jest">
+                <label for="jest">Jest</label></td>
+            <td><input type="checkbox" name="subject" id="promises" class="subject" value="Promises">
+                <label for="promises">Promises</label></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="subject" id="react" class="subject" value="React">
+                <label for="react">React</label></td>
+            <td><input type="checkbox" name="subject" id="sql" class="subject" value="SQL">
+                <label for="sql">SQL</label></td>
+            <td><input type="checkbox" name="subject" id="python" class="subject" value="Python">
+                <label for="python">Python</label></td>
+        </tr>
+      </table>
+       
+    </div>
+</div>
     <!--14. Crie um campo de avaliação.-->
+    
         <label id="label-rate" for="rate">Como você avalia a Trybewarts?</label>
-        <div class="radio-grupo">
-            <div class="radio-itens">
+        <div class="rate">
+            <div class="rate-itens">
                 <input type="radio" name="rate" id="rate1" value="1">
                 <label for="rate1">1</label>
             </div>
-        <div class="radio-itens">
+        <div class="rate-itens">
                 <input type="radio" name="rate" id="rate2" value="2">
                 <label for="rate2">2</label>
             </div> 
-            <div class="radio-itens">
+            <div class="rate-itens">
                 <input type="radio" name="rate" id="rate3" value="3">
                 <label for="rate3">3</label>
             </div> 
-        <div class="radio-itens">
+        <div class="rate-itens">
                 <input type="radio" name="rate" id="rate4" value="4">
                 <label for="rate4">4</label>
             </div> 
-        <div class="radio-itens">
+        <div class="rate-itens">
                 <input type="radio" name="rate" id="rate5" value="5">
                 <label for="rate5">5</label>
             </div> 
-        <div class="radio-itens">
+        <div class="rate-itens">
                 <input type="radio" name="rate" id="rate6" value="6">
                 <label for="rate6">6</label>
             </div>
-        <div class="radio-itens">
+        <div class="rate-itens">
                 <input type="radio" name="rate" id="rate7" value="7">
                 <label for="rate7">7</label>
             </div>          
-        <div class="radio-itens">
+        <div class="rate-itens">
                 <input type="radio" name="rate" id="rate8" value="8">
                 <label for="rate8">8</label>
             </div> 
-        <div class="radio-itens">
+        <div class="rate-itens">
                 <input type="radio" name="rate" id="rate9" value="9">
                 <label for="rate9">9</label>
             </div> 
-        <div class="radio-itens">
+        <div class="rate-itens">
                 <input type="radio" name="rate" id="rate10" value="10">
                 <label for="rate10">10</label>
             </div>     
         </div>
-        </div>
+        
     
         </form>
 
