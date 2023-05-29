@@ -12,7 +12,3 @@ function loginHeader() {
 }
 
 btnLogin.addEventListener('click', loginHeader);
-
-//function teta() {
-//  alert('pepeka');
-//}
