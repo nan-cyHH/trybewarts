@@ -4,7 +4,7 @@ const btnLogin = document.getElementById('btn-login');
 
 function loginHeader() {
   if (email.value === 'tryber@teste.com' && senha.value === '123456') {
-    alert('Olá, Tryber!');
+    alert('Olá, meu caro bruxo!');
   } else {
     alert('Email ou senha inválidos.');
   }
