@@ -30,3 +30,18 @@ textarea.addEventListener('input', () => {
 
   limitTextarea(textarea, maxLength); // Chama a função limitTextarea para limitar o número máximo de caracteres
 });
+
+// Obtém referências aos elementos do checkbox e do botão de envio
+const checkbox = document.getElementById('agreement');
+const submitButton = document.getElementById('submit-btn');
+
+// Define o manipulador de eventos para o checkbox
+checkbox.addEventListener('change', () => {
+  if (checkbox.checked) {
+    submitButton.disabled = false;
+    // Habilita o botão se o checkbox estiver selecionado
+  } else {
+    submitButton.disabled = true;
+    // Desabilita o botão se o checkbox não estiver selecionado
+  }
+});
