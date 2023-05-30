@@ -1,4 +1,3 @@
-// Captura os elementos de email, senha e botão de login
 const email = document.querySelector('input[name="email"]');
 const senha = document.querySelector('input[name="password"]');
 const btnLogin = document.getElementById('btn-login');
@@ -28,20 +27,16 @@ textarea.addEventListener('input', () => {
   const remainingLength = maxLength - currentLength;
   characterCount.textContent = `Caracteres restantes: ${remainingLength}`;
 
-  limitTextarea(textarea, maxLength); // Chama a função limitTextarea para limitar o número máximo de caracteres
+  limitTextarea(textarea, maxLength);
 });
 
-// Obtém referências aos elementos do checkbox e do botão de envio
 const checkbox = document.getElementById('agreement');
 const submitButton = document.getElementById('submit-btn');
 
-// Define o manipulador de eventos para o checkbox
 checkbox.addEventListener('change', () => {
   if (checkbox.checked) {
     submitButton.disabled = false;
-    // Habilita o botão se o checkbox estiver selecionado
   } else {
     submitButton.disabled = true;
-    // Desabilita o botão se o checkbox não estiver selecionado
   }
 });

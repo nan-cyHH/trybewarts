@@ -58,20 +58,17 @@ body {
   float: left;
 }
 
-/* Requisito 6. PS: Mudei o "evaluation-form" de class para id e juntei os trem tudo. */
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
 }
 
-/* Requisito 7. */
 aside {
   display: flex;
   justify-content: flex-end;
 }
 
-/* Requisito 7. */
 #trybewarts-forms-logo {
   height: 500px;
   filter: drop-shadow(0 0 0.75rem rgb(245, 255, 254));

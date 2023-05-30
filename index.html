@@ -9,15 +9,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="noturno">
-    <!--1. Crie uma barra verde na parte superior da página.-->
     <header class="header">
-        <!--2. Adicione o logotipo da Trybewarts.-->
         <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts">
-        
-        <!--4. Crie um título com o texto "Trybewarts" centralizado dentro do Header.-->
         <h1 id="trybewarts-header-title">Trybewarts</h1>
-        
-        <!--3. Acrescente um formulário de login no header.-->
         <form class="trybewarts-login">
             <input type="email" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Senha" required>
@@ -26,7 +20,6 @@
         </form>
     </header>
     
-    <!--5. Adicione um formulário no corpo da página.-->
     <main class="main">
         <h1>Formulário de Avaliação</h1>
         <form id="evaluation-form" class="evaluation-form">
@@ -46,7 +39,6 @@
         </div>
           </label>
           <div>
-<!--12. Adicione 3 inputs do tipo radio ao formulário.-->
           <div class="radio-group">
           <label id="label-family" for="family">Qual sua família?</label>
           <div class="radio-front"> 
@@ -62,7 +54,6 @@
           <label for="fullstack">Família Fullstack</label>
         </div> 
         </div>
-        <!--13.Crie inputs do tipo checkbox-->
         <div id="grupo-aprendizados">
         <label id="label-content" for="subject">Qual conteúdo você está com mais vontade de aprender?</label>
       <table>
@@ -85,9 +76,7 @@
       </table>
        
     </div>
-</div>
-    <!--14. Crie um campo de avaliação.-->
-    
+</div>  
         <label id="label-rate" for="rate">Como você avalia a Trybewarts?</label>
         <div class="rate">
             <div class="rate-itens">
@@ -131,23 +120,17 @@
                 <label for="rate10">10</label>
             </div>     
         </div>
-        <!--15. Crie uma textarea.-->
         <div class="textarea-group">
             <div id="character-count">Caracteres restantes: 500</div>
             <label class="textarea" for="comment">Deixe seu comentário:</label>
             <textarea id="comment" oninput="limitTextarea(this, 500)"></textarea>
         </div>
-        
-        <!--16. Crie uma checkbox-->
         <div class="checkbox-agree">       
             <input type="checkbox" id="agreement">
             <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
         </div> 
-       <!--17. Crie um botão de "Enviar" para submeter o formulário.-->
        <button type="submit" id="submit-btn" disabled>Enviar</button>
-
         </form>
-
     </main>
 
     <aside>
