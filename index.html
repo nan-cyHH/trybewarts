@@ -131,7 +131,14 @@
                 <label for="rate10">10</label>
             </div>     
         </div>
-        
+        <!--15. Crie uma textarea.-->
+        <div class="textarea-group">
+            <div id="character-count">Caracteres restantes: 500</div>
+            <label class="textarea" for="comment">Deixe seu comentário:</label>
+            <textarea id="comment" oninput="limitTextarea(this, 500)"></textarea>
+
+            
+        </div>
     
         </form>
 
