@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,8 @@
     <title>Trybewarts Wizarding School!</title>
     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <script>
         function trocaFundo() {
             const body = document.getElementsByTagName('body')[0];
@@ -17,6 +20,7 @@
             }
         }
     </script>
+    
 </head>
 <body class="dia">
     <!--1. Crie uma barra verde na parte superior da página.-->
@@ -28,12 +32,15 @@
             <input type="email" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Senha" required>
             <button type="button" id="btn-login">Entrar</button>
-           
         </form>
-        <button class="trocafundo" onclick="trocaFundo()"> 
-           <img src="images/theme_light_dark_icon_137104.png" width="40px" height="40px" alt="Ícone">
-        </button>
 
+        <button class="trocafundo" onclick="trocaFundo()">
+            <img src="images/theme_light_dark_icon_137104.png" width="40px" height="40px" alt="Ícone">
+            
+         </button>
+        
+            </span>
+         </button>
     </header>
     
     <main class="main">
@@ -52,7 +59,9 @@
              <option value="Corvinode" id="corvinode-house">Corvinode</option>
              <option value="Pytherina" id="pytherina-house">Pytherina</option>
           </select>
+          <hr>
         </div>
+        
           </label>
           <div>
           <div class="radio-group">
@@ -90,7 +99,7 @@
                 <label for="python">Python</label></td>
         </tr>
       </table>
-       
+      <hr>
     </div>
 </div>  
         <label id="label-rate" for="rate">Como você avalia a Trybewarts?</label>
@@ -145,7 +154,7 @@
             <input type="checkbox" id="agreement">
             <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
         </div> 
-       <button type="submit" id="submit-btn" disabled>Enviar</button>
+       <button type="submit" id="submit-btn" disabled><strong>Enviar</strong></button>
         </form>
     </main>
 
