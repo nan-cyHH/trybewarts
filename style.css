@@ -2,8 +2,16 @@ body {
   margin: 0;
   background-color: rgb(237, 243, 242);
   font-family: Inknut Antiqua, serif;
+}
+
+.dia {
+  background-image: url('FundoDia.png');
+}
+
+.noite {
   background-image: url('Fundo.png');
 }
+
 
 /* body.noturno {
   margin: 0;
@@ -87,11 +95,6 @@ footer {
   bottom: 0;
   left: 0;
 }
-
-/* .radio-group {
-  display: flex;
-  flex-direction: column;
-} */
 
 .checkbox-group {
   display: flex;

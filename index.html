@@ -7,13 +7,22 @@
     <title>Trybewarts Wizarding School!</title>
     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script>
+        function trocaFundo() {
+            const body = document.getElementsByTagName('body')[0];
+            if (body.classList[0] === 'dia') {
+                body.classList.replace('dia', 'noite');
+            } else {
+                body.classList.replace('noite', 'dia');
+            }
+        }
+    </script>
 </head>
-<body class="noturno">
+<body class="dia">
     <!--1. Crie uma barra verde na parte superior da página.-->
     <header class="header">
         <!--2. Adicione o logotipo da Trybewarts.-->
         <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts">
-        
         <!--4. Crie um título com o texto "Trybewarts" centralizado dentro do Header.-->
         <h1 id="trybewarts-header-title">Trybewarts</h1>
         
@@ -22,8 +31,12 @@
             <input type="email" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Senha" required>
             <button type="button" id="btn-login">Entrar</button>
-           <!-- <div onclick="teta()" on><img src="images/lua.png" style="width: 50px;"></div>-->
+           
         </form>
+        <button class="trocafundo" onclick="trocaFundo()"> 
+           <img src="images/theme_light_dark_icon_137104.png" width="40px" height="40px" alt="Ícone">
+        </button>
+
     </header>
     
     <!--5. Adicione um formulário no corpo da página.-->
@@ -159,6 +172,7 @@
     </footer>
     
     <script src="script.js"></script>
+   
 </body>
 </html>
 
