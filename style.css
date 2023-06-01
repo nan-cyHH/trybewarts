@@ -5,6 +5,14 @@ body {
   background-repeat: no-repeat;
 }
 
+.noite {
+  background-image: url('Fundo_noite.png');
+}
+
+.dia {
+  background-image: url('Fundo_dia.png');
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -29,6 +37,32 @@ body {
   height: 70px;
 }
 
+#emailSenha {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+#email {
+  width: 150px;
+  height: 40px;
+  font-family: Inknut Antiqua, serif;
+  border: none;
+  border-radius: 7px;
+  margin-right: 14px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+#senha {
+  width: 150px;
+  height: 40px;
+  font-family: Inknut Antiqua, serif;
+  border: none;
+  border-radius: 7px;
+  margin-right: 14px;;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
 .trybewarts-login {
   display: flex;
 }
@@ -38,30 +72,47 @@ body {
 }
 
 .trybewarts-login button {
-  background-color: white;
-  color: black;
+  background-color: rgb(80, 80, 121);
+  color: aliceblue;
+  height: 40px;
+  width: 100px;
+  font-family: Inknut Antiqua, serif;
   border: none;
-  padding: 10px;
-  cursor: pointer;
+  border-radius: 9px;
+  margin-right: 20px;
+  transition-duration: 1s;
 }
 
 .trybewarts-login button:hover {
-  background-color: black;
-  color: white;
+  background-color: rgba(235, 219, 253, 0.599);
+  color:rgb(49, 49, 77);
+  border: none;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
+  filter: drop-shadow(0 0 0.75rem rgba(245, 255, 254, 0.452));
+  transition-duration: 1s;
+}
+
+.trybewarts-login button:hover:out {
+  transition-duration: 1s;
 }
 
 .trocafundo {
-  background-color: rgba(235, 219, 253, 0.144);
-	height: 50px;
-	width: 50px;
+  background-color: rgba(235, 219, 253, 0.599);
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
   border: none;
-	border-radius: 100px;
+  border-radius: 100px;
   box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
   filter: drop-shadow(0 0 0.75rem rgba(245, 255, 254, 0.452));
+  transition-duration: 1s;
 }
 
-.material-symbols-outlined {
-  color: rgba(240, 248, 255, 0.562);
+.trocafundo:hover {
+  background-color: rgba(240, 248, 255, 0.87);
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
+  filter: drop-shadow(0 0 0.75rem rgba(245, 255, 254, 0.452));
+  transition-duration: 1s;
 }
 
 .main {
@@ -73,12 +124,14 @@ body {
   filter: drop-shadow(0 0 0.75rem rgb(245, 255, 254));
   align-items: center;
   margin-left: 4%;
-  margin-top: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   border-radius: 5%;
 }
 
-h1 {
+#formulario {
   color: rgb(49, 49, 77);
+  margin-bottom: 10px;
 }
 
 #evaluation-form {
@@ -87,39 +140,45 @@ h1 {
   flex-direction: column;
 }
 
-aside {
-  display: flex;
-  justify-content: center;
-  margin-top: 6.5%;
+#input-name {
+  width: 327px;
+  height: 38px;
+  font-family: Inknut Antiqua, serif;
+  border: none;
+  border-radius: 7px;
+  margin-bottom: 15px;
+  margin-right: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
-#trybewarts-forms-logo {
-  height: 550px;
-  filter: drop-shadow(0 0 0.75rem rgb(245, 255, 254));
-  transition: transform 0.8s ease;
+#input-lastname {
+  width: 327px;
+  height: 38px;
+  font-family: Inknut Antiqua, serif;
+  border: none;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
-#trybewarts-forms-logo:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.2);
+#input-email {
+  width: 327px;
+  height: 38px;
+  font-family: Inknut Antiqua, serif;
+  border: none;
+  border-radius: 7px;
+  margin-bottom: 15px;
+  margin-right: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
-#trybewarts-forms-logo:hover:out {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  transition: transform 1s ease;
-}
-footer {
-  display: flex;
-  width: 100%;
-  height: 54px;
-  background-color: rgb(47 47 60);
-  color: aliceblue;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  justify-content: center;
-  align-items: center;
+#house {
+  width: 280px;
+  height: 38px;
+  font-family: Inknut Antiqua, serif;
+  border: none;
+  border-radius: 7px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
 .checkbox-group {
@@ -146,6 +205,15 @@ footer {
   margin-right: 10px;
 }
 
+#comment {
+  width: 672px;
+  height: 116px;
+  font-family: Inknut Antiqua, serif;
+  border: none;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
 .grupo-aprendizados {
   width: 60%;
   float: right;
@@ -160,11 +228,11 @@ footer {
   margin-top: 2%;
   background-color: rgb(80, 80, 121);
   color: aliceblue;
-	height: 50px;
-	width: 200px;
-	font-family: Inknut Antiqua, serif;
+  height: 50px;
+  width: 200px;
+  font-family: Inknut Antiqua, serif;
   border: none;
-	border-radius: 15px;
+  border-radius: 15px;
   font-size: 15px;
   margin-left: 230px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -175,11 +243,38 @@ hr {
   border-style: inset;
   border-width: 1px;
 }
-.dia {
-  background-image: url('Fundo_dia.png');
+
+aside {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
 }
 
-.noite {
-  background-image: url('Fundo_noite.png');
+#trybewarts-forms-logo {
+  height: 580px;
+  filter: drop-shadow(0 0 0.75rem rgb(245, 255, 254));
+  transition: transform 0.8s ease;
 }
 
+#trybewarts-forms-logo:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.2);
+}
+
+#trybewarts-forms-logo:hover:out {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition: transform 1s ease;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 54px;
+  background-color: rgb(47 47 60);
+  color: aliceblue;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+}
