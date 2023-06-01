@@ -7,17 +7,35 @@
     <title>Trybewarts Wizarding School!</title>
     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head> 
+
 <body class="noturno">
+    <script>
+        function trocaFundo() {
+            const body = document.getElementsByTagName('body')[0];
+            if (body.classList[0] === 'dia') {
+                body.classList.replace('dia', 'noite');
+            } else {
+                body.classList.replace('noite', 'dia');
+            }
+        }
+    </script>
     <header class="header">
-        <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts">
-        <h1 id="trybewarts-header-title">Trybewarts</h1>
+        <div id="titulo">
+          <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts">
+          <h1 id="trybewarts-header-title">rybewarts</h1>
+        </div>
         <form class="trybewarts-login">
             <input type="email" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Senha" required>
             <button type="button" id="btn-login">Entrar</button>
-           <!-- <div onclick="teta()" on><img src="images/lua.png" style="width: 50px;"></div>-->
         </form>
+        <button class="trocafundo" onclick="trocaFundo()">
+            <span class="material-symbols-outlined">
+                contrast
+            </span>
+         </button>
     </header>
     
     <main class="main">
@@ -36,7 +54,9 @@
              <option value="Corvinode" id="corvinode-house">Corvinode</option>
              <option value="Pytherina" id="pytherina-house">Pytherina</option>
           </select>
+          <hr>
         </div>
+        
           </label>
           <div>
           <div class="radio-group">
@@ -74,7 +94,7 @@
                 <label for="python">Python</label></td>
         </tr>
       </table>
-       
+      <hr>
     </div>
 </div>  
         <label id="label-rate" for="rate">Como você avalia a Trybewarts?</label>
@@ -129,7 +149,7 @@
             <input type="checkbox" id="agreement">
             <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
         </div> 
-       <button type="submit" id="submit-btn" disabled>Enviar</button>
+       <button type="submit" id="submit-btn" disabled><strong>Enviar</strong></button>
         </form>
     </main>
 
