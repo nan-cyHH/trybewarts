@@ -3,14 +3,13 @@ body {
   font-family: Inknut Antiqua, serif;
   background-image: url('Fundo_noite.png');
   background-repeat: no-repeat;
+  transition: 2s;
 }
+
+/* Modo noturno */
 
 .noite {
   background-image: url('Fundo_noite.png');
-}
-
-.dia {
-  background-image: url('Fundo_dia.png');
 }
 
 .header {
@@ -18,7 +17,7 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 20px;
-  background-color: rgb(47 47 60);
+  background-color: rgb(47 47 60 / 86%);
   padding: 10px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   height: 70px;
@@ -141,7 +140,7 @@ body {
 }
 
 #input-name {
-  width: 327px;
+  width: 324px;
   height: 38px;
   font-family: Inknut Antiqua, serif;
   border: none;
@@ -161,7 +160,7 @@ body {
 }
 
 #input-email {
-  width: 327px;
+  width: 324px;
   height: 38px;
   font-family: Inknut Antiqua, serif;
   border: none;
@@ -199,6 +198,7 @@ body {
 
 .rate {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .rate-itens {
@@ -211,7 +211,7 @@ body {
   font-family: Inknut Antiqua, serif;
   border: none;
   border-radius: 7px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  box-shadow: rgb(49 49 77 / 35%) 0px 10px 50px;
 }
 
 .grupo-aprendizados {
@@ -271,10 +271,135 @@ footer {
   display: flex;
   width: 100%;
   height: 54px;
-  background-color: rgb(47 47 60);
+  background-color: rgb(47 47 60 / 93%);
   color: aliceblue;
   bottom: 0;
   left: 0;
   justify-content: center;
   align-items: center;
+}
+
+/* Modo diurno */
+
+.dia {
+  background-image: url('Fundo_dia.png');
+  transition: 1s;
+}
+
+.dia header {
+  background-color: #465b62d9;
+  transition: 2s;
+  border-style: solid;
+  border-width: 0px 0px 2px 0px;
+  border-color: rgba(138, 57, 57, 0.753)
+}
+
+.dia #trybewarts-header-title {
+  color: white;
+}
+
+.dia #email {
+  box-shadow: rgba(38, 47, 53, 0.534) 0px 20px 30px -10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(138, 57, 57, 0.678)
+}
+
+.dia #senha { 
+  box-shadow: rgba(38, 47, 53, 0.534) 0px 20px 30px -10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(138, 57, 57, 0.753)
+}
+
+.dia button.trocafundo {
+  background-color: #f7e0a0bd;
+  transition: 2s;
+}
+
+.dia .trocafundo:hover {
+  background-color: rgba(255, 243, 194, 0.87);
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
+  filter: drop-shadow(0 0 0.75rem rgba(255, 253, 245, 0.644));
+  transition-duration: 1s;
+}
+
+.dia .trybewarts-login button {
+  background-color: #cd6d6dd9;
+  box-shadow: rgba(38, 47, 53, 0.534) 0px 20px 30px -10px;
+}
+
+.dia .trybewarts-login button:hover {
+  background-color: rgba(255, 243, 194, 0.87);
+  color:#913740cc;
+  border: none;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
+  filter: drop-shadow(0 0 0.75rem rgba(245, 255, 254, 0.452));
+  transition-duration: 1s;
+}
+
+.dia main.main {
+  background-color: #e9e9d6d8;
+  filter: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(74 25 25 / 30%);
+  box-shadow: rgb(77, 50, 38) 0px 20px 30px -10px;
+}
+
+.dia #formulario {
+  color: #466164;
+}
+
+.dia #trybewarts-forms-logo {
+  filter: drop-shadow(10px 10px 19px rgba(63, 40, 31, 0.692));
+  transition-duration: 1s;
+}
+
+.dia #input-name {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(74 25 25 / 30%);
+  box-shadow: rgba(116, 96, 32, 0.247) 0px 20px 30px -10px;
+}
+
+.dia #input-lastname {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(74 25 25 / 30%);
+  box-shadow: rgba(116, 96, 32, 0.247) 0px 20px 30px -10px;
+}
+
+.dia #input-email {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(74 25 25 / 30%);
+  box-shadow: rgba(116, 96, 32, 0.247) 0px 20px 30px -10px;
+}
+
+.dia #house {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(74 25 25 / 30%);
+  box-shadow: rgba(116, 96, 32, 0.247) 0px 20px 30px -10px;
+}
+
+.dia #comment {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(74 25 25 / 30%);
+  box-shadow: rgba(116, 96, 32, 0.247) 0px 20px 30px -10px;
+}
+
+.dia button#submit-btn {
+  background-color: #618387;
+}
+  
+.dia footer {
+  background-color: #974949f6;
+  box-shadow: none;
+  border-style: solid;
+  border-width: 2px 0px 0px 0px;
+  border-color: #37494e;
+  transition: 2s;
 }
